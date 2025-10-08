@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mico Setiawan — Web Developer</title>
+  <meta name="description" content="Portofolio Mico Setiawan — Web Developer" />
+  <style>
+    :root{
+      --bg:#0a0f1a;--card:#111827;--accent:#3b82f6;--text:#f1f5f9;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+    header{display:flex;justify-content:space-between;align-items:center;padding:30px 10%;background:rgba(255,255,255,0.03);backdrop-filter:blur(8px);position:sticky;top:0}
+    header h1{font-size:24px;color:var(--accent)}
+    nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent)}
+    .hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:60vh;padding:60px 20px}
+    .hero h2{font-size:42px;margin-bottom:10px;color:var(--text)}
+    .hero p{max-width:600px;color:var(--muted);line-height:1.6}
+    .btn{display:inline-block;margin-top:20px;padding:12px 24px;background:var(--accent);color:white;border-radius:8px;text-decoration:none;font-weight:600}
+    section{max-width:1000px;margin:80px auto;padding:0 20px}
+    h3{font-size:26px;margin-bottom:20px;color:var(--accent)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:var(--glass);border:1px solid rgba(255,255,255,0.05);padding:10px 16px;border-radius:8px;color:var(--muted);font-size:14px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .project{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.4)}
+    .project img{width:100%;height:180px;object-fit:cover}
+    .project-content{padding:16px}
+    .project-content h4{margin-bottom:8px;font-size:18px;color:var(--text)}
+    .project-content p{font-size:14px;color:var(--muted);line-height:1.6}
+    footer{text-align:center;padding:40px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.05)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mico Setiawan</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Halo, Saya <span style="color:var(--accent)">Mico Setiawan</span></h2>
+    <p>Seorang Web Developer yang suka membangun website modern, cepat, dan responsif menggunakan teknologi web terkini. Saya fokus pada tampilan yang menarik dan pengalaman pengguna yang menyenangkan.</p>
+    <a class="btn" href="#projects">Lihat Proyek</a>
+  </section>
+
+  <section id="about">
+    <h3>Tentang Saya</h3>
+    <p>Saya memiliki ketertarikan besar pada dunia pengembangan web, terutama pada front-end development. Saya senang belajar hal baru dan menerapkan teknologi modern untuk menciptakan solusi digital yang kreatif dan efisien. Dalam setiap proyek, saya berusaha menjaga kualitas kode, performa, dan estetika desain.</p>
+  </section>
+
+  <section id="skills">
+    <h3>Keahlian</h3>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">TailwindCSS</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>Proyek</h3>
+    <div class="projects">
+      <div class="project">
+        <img src="https://picsum.photos/640/400?random=1" alt="project 1" />
+        <div class="project-content">
+          <h4>Portfolio Website</h4>
+          <p>Website portofolio pribadi dengan desain responsif dan efek animasi halus. Dibangun menggunakan HTML, CSS, dan JavaScript.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/640/400?random=2" alt="project 2" />
+        <div class="project-content">
+          <h4>Task Manager App</h4>
+          <p>Aplikasi manajemen tugas berbasis web yang memungkinkan pengguna menambahkan, mengedit, dan menandai tugas selesai menggunakan React dan Node.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Kontak</h3>
+    <p>Ingin berkolaborasi atau berdiskusi proyek? Hubungi saya melalui email atau media sosial berikut:</p>
+    <ul style="list-style:none;margin-top:10px">
+      <li>📧 Email: <a href="mailto:mico.setiawan@example.com" style="color:var(--accent)">mico.setiawan@example.com</a></li>
+      <li>💼 GitHub: <a href="https://github.com/micost" target="_blank" style="color:var(--accent)">github.com/micost</a></li>
+      <li>📸 Instagram: <a href="https://instagram.com/micost" target="_blank" style="color:var(--accent)">@micost</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Mico Setiawan — Dibuat dengan ❤️ menggunakan HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
